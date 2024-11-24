@@ -16,8 +16,11 @@ import { Trash2Icon } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
 import AddDataContent, { FormInputs } from "./_components/AddDataContent";
 import EditDialog from "./_components/EditDialog";
-import { ReactSelect } from "@/components/ui/react-select";
-import { FancyMultiSelect } from "@/components/ui/multi";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Simple CRUD - Third Page",
+};
 
 export interface Users {
   id: number;

@@ -2,6 +2,11 @@
 
 import Image from "next/image";
 import RegisterForm from "./_components/register-form";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Simple REST API - Fifth Page",
+};
 
 export default function ThirdPage() {
   return (

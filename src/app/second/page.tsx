@@ -1,7 +1,12 @@
 "use client";
 
 import { TextField } from "@/components/ui/text-field";
-import { ChangeEvent, useMemo, useState } from "react";
+import { Metadata } from "next";
+import { ChangeEvent, useState } from "react";
+
+export const metadata: Metadata = {
+  title: "Search algorithms - Second Page",
+};
 
 export default function ThirdPage() {
   const data = [

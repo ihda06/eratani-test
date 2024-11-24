@@ -1,7 +1,6 @@
-import Image from "next/image";
-
 import ThemeToggle from "./_components/ThemeToggle";
 import Card from "./_components/Card";
+import { Metadata } from "next";
 const questions = [
   {
     title: "1. Design UI dengan ReactJS",
@@ -25,6 +24,10 @@ const questions = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Main Page - Eratani Assessment Test",
+};
+
 export default function Home() {
   return (
     <div className="relative">
@@ -35,8 +38,9 @@ export default function Home() {
           <div className="bg-white/80 dark:bg-black/60 p-8 rounded-lg w-full">
             <h1 className="text-4xl font-bold dark:text-white">Hi, Welcome!</h1>
             <h2>
-              Kalau ada bug di aplikasi ini, anggap saja itu fitur rahasia yang
-              butuh eksplorasi lebih lanjut. 👀🐛
+              Terima kasih kesempatannya untuk bisa mengikuti assesment test
+              ini. Kalau ada bug di aplikasi ini, anggap saja itu fitur rahasia
+              yang butuh eksplorasi lebih lanjut 👀👀🐛
             </h2>
           </div>
           <div className="grid xl:grid-cols-5 lg:grid-cols-3 grid-cols-1 w-full gap-3">
