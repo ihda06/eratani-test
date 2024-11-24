@@ -13,6 +13,7 @@ import { formatCapitalize } from "../utils/formatter";
 import Pagination from "@/components/ui/pagination";
 import { Input } from "@/components/ui/text-field/input";
 import { useDebounceValue } from "usehooks-ts";
+import { User } from "@/types/user";
 
 const columnHelper = createColumnHelper<User>();
 export default function ThirdPage() {

@@ -18,6 +18,7 @@ import cn from "@/app/utils/clsx";
 import { TextFieldWrapper, TextFieldWrapperProps } from "./text-field/wrapper";
 import Show from "../utils/Show";
 
+// eslint-disable-next-line
 const reactSelectVariants = cva(null, {
   variants: {
     size: {
@@ -156,6 +157,7 @@ const ClearIndicator = <
   IsMulti extends boolean = false,
   Group extends GroupBase<Option> = GroupBase<Option>
 >({
+  // eslint-disable-next-line
   children,
   className,
   ...props
@@ -178,6 +180,7 @@ const DropdownIndicator = <
   IsMulti extends boolean = false,
   Group extends GroupBase<Option> = GroupBase<Option>
 >({
+  // eslint-disable-next-line
   children,
   className,
   ...props

@@ -1,5 +1,3 @@
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useCallback } from "react";
 import { ReactSelect } from "./react-select";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import cn from "@/app/utils/clsx";

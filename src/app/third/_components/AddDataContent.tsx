@@ -1,13 +1,11 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { DialogTitle } from "@/components/ui/dialog";
+
 import { Input } from "@/components/ui/text-field/input";
 import Button from "@/components/ui/button";
 import { Users } from "../page";
-// Sesuaikan path import DialogTitle
 
-// Zod schema untuk validasi
 const formSchema = z.object({
   first_name: z.string().nonempty("First Name is required"),
   last_name: z.string().nonempty("Last Name is required"),
@@ -15,7 +13,6 @@ const formSchema = z.object({
   gender: z.string().nonempty("Gender is required"),
 });
 
-// Tipe otomatis dari Zod schema
 export type FormInputs = z.infer<typeof formSchema>;
 
 const AddDataContent = ({
@@ -36,7 +33,6 @@ const AddDataContent = ({
 
   const onValid: SubmitHandler<FormInputs> = (data) => {
     onSubmit(data);
-    // Tambahkan logika setelah submit (misalnya kirim ke API)
   };
 
   return (

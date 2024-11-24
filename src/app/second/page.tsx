@@ -14,7 +14,7 @@ export default function ThirdPage() {
     "Derian Lekso",
   ];
 
-  const [query, setQuery] = useState<string>("");
+  const [_, setQuery] = useState<string>("");
   const [filteredData, setFilteredData] = useState<string[]>(data);
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {

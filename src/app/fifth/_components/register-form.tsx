@@ -34,12 +34,7 @@ const registerSchema = z.object({
 type RegisterFormData = z.infer<typeof registerSchema>;
 
 const RegisterForm = () => {
-  const {
-    control,
-    handleSubmit,
-    resetField,
-    formState: { errors },
-  } = useForm<RegisterFormData>({
+  const { control, handleSubmit, resetField } = useForm<RegisterFormData>({
     resolver: zodResolver(registerSchema),
     defaultValues: {
       name: "",
@@ -61,7 +56,7 @@ const RegisterForm = () => {
         toast.error(error.response?.data[0].message);
       }
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       setIsSubmitted(true);
       resetField("name");
       resetField("email");

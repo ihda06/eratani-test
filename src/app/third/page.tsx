@@ -8,7 +8,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import CustomTable from "@/components/ui/table";
-import { Input } from "@/components/ui/text-field/input";
 import { DataSample } from "@/const/DataSample";
 
 import { createColumnHelper } from "@tanstack/react-table";
@@ -29,9 +28,7 @@ const columnHelper = createColumnHelper<Users>();
 export default function ThirdPage() {
   const [isOpen, setIsOpen] = useState(false);
   const [data, setData] = useState<Users[]>(DataSample);
-  const [selected, setSelected] = useState<{ value: string; label: string }[]>(
-    []
-  );
+
   const handleSubmit = useCallback(
     (newData: FormInputs) => {
       const newrecord: Users = { ...newData, id: data.length + 1 };
@@ -111,12 +108,6 @@ export default function ThirdPage() {
     [handleDelete, handleEdit]
   );
 
-  const SearchData = useMemo(() => {
-    return data.filter((item) =>
-      selected.some((v) => v.value === item.id.toString())
-    );
-  }, [data, selected]);
-
   return (
     <div className="flex flex-col p-20 gap-9">
       <div className="flex justify-between items-center">
@@ -129,12 +120,10 @@ export default function ThirdPage() {
             <AddDataContent onSubmit={handleSubmit} />
           </DialogContent>
         </Dialog>
+        <h1 className="text-3xl font-bold">Simple CRUD from Grenerated Data</h1>
       </div>
       <div className="rounded-lg border border-gray-200 shadow-sm">
-        <CustomTable
-          data={SearchData.length > 0 ? SearchData : data}
-          columns={columns}
-        />
+        <CustomTable data={data} columns={columns} />
       </div>
     </div>
   );
