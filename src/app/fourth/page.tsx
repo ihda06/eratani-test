@@ -13,11 +13,6 @@ import { formatCapitalize } from "../utils/formatter";
 import Pagination from "@/components/ui/pagination";
 import { Input } from "@/components/ui/text-field/input";
 import { useDebounceValue } from "usehooks-ts";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Simple Rest API - Fourth Page",
-};
 
 const columnHelper = createColumnHelper<User>();
 export default function ThirdPage() {
