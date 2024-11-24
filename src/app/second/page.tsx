@@ -14,12 +14,10 @@ export default function ThirdPage() {
     "Derian Lekso",
   ];
 
-  const [_, setQuery] = useState<string>("");
   const [filteredData, setFilteredData] = useState<string[]>(data);
 
   const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    setQuery(value);
 
     // Filter data yang cocok dengan query (case insensitive)
     const results = data.filter((item) =>

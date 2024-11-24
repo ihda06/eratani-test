@@ -182,6 +182,7 @@ const DropdownIndicator = <
 >({
   // eslint-disable-next-line
   children,
+  // eslint-disable-next-line
   className,
   ...props
 }: DropdownIndicatorProps<Option, IsMulti, Group>) => {
@@ -200,6 +201,7 @@ const MultiValueRemove = <
   IsMulti extends boolean = false,
   Group extends GroupBase<Option> = GroupBase<Option>
 >({
+  // eslint-disable-next-line
   children,
   ...props
 }: MultiValueRemoveProps<Option, IsMulti, Group>) => {
