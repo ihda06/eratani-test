@@ -1,0 +1,33 @@
+.mobile-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 21px;
+  width: 26px;
+  cursor: pointer;
+  @apply md:hidden;
+}
+
+.mobile-button-wrapper span {
+  width: 100%;
+  height: 3px;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.mobile-button-wrapper span.active:nth-of-type(1),
+.mobile-button-wrapper span.active:nth-of-type(3) {
+  transform-origin: left;
+}
+
+.mobile-button-wrapper span.active:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+
+.mobile-button-wrapper span.active:nth-of-type(2) {
+  width: 0;
+}
+
+.mobile-button-wrapper span.active:nth-of-type(3) {
+  transform: rotate(-45deg);
+}

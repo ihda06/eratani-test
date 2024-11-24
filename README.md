@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eratani Technical Test
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Eratani Technical Test](#eratani-technical-test)
+  - [Table of Contents](#table-of-contents)
+  - [Perkenalan](#perkenalan)
+    - [Tentang Project](#tentang-project)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Informasi tambahan](#informasi-tambahan)
+    - [Tech stack](#tech-stack)
+  - [Contact Information](#contact-information)
+
+## Perkenalan
+
+Hai, Perkenalkan saya Ihda Anwari saya seorang Frontend Web Developer lulusan Bisnis Digital Universitas Padjadjaran dengan pengalaman > 1 tahun di Frontend web development. Terimakasih atas kesempatannya sehingga saya bisa memasuki tahap technical test. Saya sangat berharap bisa bergabung menjadi bagian eraforce.
+
+### Tentang Project
+
+Project ini dibuat menggunakan framework NextJS terbaru yaitu NextJs 15, dalam project ini terdiri dari kombinasi server component dan client component.
+
+Styling project ini menggunakan tailwindcss, project ini juga sudah mendukung fitur switching theme, user dapat memilih dark mode atau light mode. Component mayoritas dibuat secara kombinasi menggunakan library radix ui dan shadcn dengan kustomisasi sendiri sehingga project ini tidak menggunakan design system secara utuh.
+
+Halaman dibagi menjadi 5 halaman dengan navigasi dihalaman pertama. setiap halaman mewakili nomor soal sesuai dengan yang dilampirkan dalam dokumen assesment test sebelumnya.
+
+Karena keterbatasan waktu styling yang dibuat tidak terlalu memukau namun saya yakin project struktur yang dibuat sudah cukup kuat untuk pondasi pengembangan kedepannya sehingga pengembang akan mudah untuk me-maintain struktur kode dengan lebih efektif dan efisien
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Clone the repository
+git clone https://github.com/ihda06/eratani-test.git
+
+# Navigate to the project directory
+cd eratani-test
+
+# Install dependencies using pnpm
+pnpm install
+
+or
+
+bun install
+
+```
+
+## Usage
+
+Run the project
+
+```bash
+pnpm run dev
+or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Informasi tambahan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tech stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Typescript
+- NextJS 15 app router + React 18
+- Radix UI
+- shadcn
+- Tanstack Table
+- TailwindCSS
+- Framer Motion
+- Next Themes
+- use-hooks
+- hero icon
+- react icons
+- react hook form + zod
 
-## Learn More
+## Contact Information
 
-To learn more about Next.js, take a look at the following resources:
+Jika ada pertanyaan saya sangat terbuka, silahkan hubungi kontak yang sudah saya cantumkan dibawah :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email:** [ihdaanwari5@gmail.com](mailto:ihdaanwari5@gmail.com)
+- **Instagram:** [@ihda.anwari](https://instagram.com/ihda.anwari)
+- **GitHub:** [ihda06](https://github.com/ihda06)
+- **Linkedin:** [Ihda Anwari](https://www.linkedin.com/in/ihda-anwari/)

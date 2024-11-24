@@ -1,0 +1,11 @@
+.first .swiper-pagination {
+  @apply flex justify-center w-full gap-3 absolute bottom-0 z-30 pb-3;
+}
+
+.first .swiper-pagination-bullet {
+  @apply w-10 h-3 bg-slate-100 rounded-md hover:cursor-pointer;
+}
+
+.first .swiper-pagination-bullet-active {
+  @apply bg-secondary-400;
+}
